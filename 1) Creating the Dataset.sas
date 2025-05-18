@@ -1,6 +1,11 @@
 DATA college_students;
+/*Creates a new dataset named college_students*/
+
     INPUT Name $ Age Gender $ Score Department $;
-    DATALINES;
+    /*Defines variables and their types (character $ or numeric)*/    
+   
+    DATALINES;  /*Indicates that data values will follow directly in the code*/
+     
 Alice     20 F 85 CS
 Bob       22 M 90 IT
 Carol     21 F 78 ME
@@ -22,4 +27,7 @@ Rachel    23 F 74 ME
 Steve     21 M 88 CS
 Tina      20 F 80 EE
 ;
+/*Each line contains values for one student’s record*/
+
 RUN;
+/*Executes the DATA step to create the dataset*/
